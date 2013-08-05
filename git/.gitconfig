@@ -1,0 +1,30 @@
+[user]
+  name = Phillip Boksz
+  email = 
+  token = 
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
+[alias]
+  ka = !gitk --all
+  reflogr = reflog --date=relative·
+  pom = push origin master
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
+  st = status
+  co = checkout
+  cm = commit -m
+  di = diff
+  ds = diff --staged
+  pr = pull --rebase
+  rc = rebase --continue
+  sh = stash
+  sp = stash pop
+[core]
+  editor = vim
+[merge]
+  tool = vimdiff
+[push]
+  default = tracking
