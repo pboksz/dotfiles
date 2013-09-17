@@ -24,6 +24,7 @@
   sp = stash pop
 [core]
   editor = vim
+  excludesfile = ~/.gitignore_global
 [merge]
   tool = vimdiff
 [push]
