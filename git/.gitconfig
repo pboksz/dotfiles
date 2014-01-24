@@ -16,6 +16,7 @@
   st = status
   co = checkout
   cm = commit -m
+  ca = commit --amend
   di = diff
   ds = diff --staged
   pr = pull --rebase
