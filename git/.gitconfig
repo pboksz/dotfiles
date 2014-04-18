@@ -13,7 +13,7 @@
   pom = push origin master
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
-  st = status
+  st = status -sb
   co = checkout
   cm = commit -m
   ca = commit --amend
@@ -23,6 +23,7 @@
   rc = rebase --continue
   sh = stash
   sp = stash pop
+  un = reset --soft HEAD^
 [core]
   editor = vim
   excludesfile = ~/.gitignore_global
@@ -30,3 +31,5 @@
   tool = vimdiff
 [push]
   default = tracking
+[help]
+  autocorrect = true
