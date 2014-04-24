@@ -32,4 +32,4 @@
 [push]
   default = tracking
 [help]
-  autocorrect = true
+  autocorrect = 20
