@@ -9,20 +9,23 @@
   ui = true
 [alias]
   ka = !gitk --all
-  reflogr = reflog --date=relative·
-  pom = push origin master
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-  serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
-  st = status -sb
+  st = status
   co = checkout
   cm = commit -m
   ca = commit --amend
+  cam = commit --amend -m
   di = diff
   ds = diff --staged
   pr = pull --rebase
-  rc = rebase --continue
+  prc = rebase --continue
+  pra = rebase --abort
   sh = stash
   sp = stash pop
+  rp = remote prune origin
+  cp = cherry-pick -m 1
+  cpa = cherry-pick --abort
+  cpc = cherry-pick --continue
   un = reset --soft HEAD^
 [core]
   editor = vim
@@ -31,5 +34,3 @@
   tool = vimdiff
 [push]
   default = tracking
-[help]
-  autocorrect = 20
