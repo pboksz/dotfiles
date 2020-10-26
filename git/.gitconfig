@@ -1,7 +1,7 @@
 [user]
-  name = Phillip Boksz
-  email = 
-  token = 
+  name =
+  email =
+  token =
 [color]
   diff = auto
   status = auto
@@ -23,6 +23,9 @@
   sh = stash
   sp = stash pop
   rp = remote prune origin
+  bc = branch
+  bd = branch -d
+  bm = branch -m
   cp = cherry-pick -m 1
   cpa = cherry-pick --abort
   cpc = cherry-pick --continue
